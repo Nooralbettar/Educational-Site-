@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sign up form page </title>
+	<link rel="stylesheet" type="text/css" href="../css/signup.css">
+</head>
+<body>
+
+			<!--header-->
+			<!--header-->
+	<div id="top"><!-- logo-->	<img id ="imagelogo" src="../photo/p2.png" > 
+
+	<!--the name of website--> 
+	<p id="namelogo">Apostrophe</p> 
+
+	<!-- nav bar-->
+	<nav id='navpar'>
+		<a class="nav" href="index.html"> Home Page</a>
+		<a class="nav" href="login.html"> Login</a>
+		<a class="nav" href="signUp.html"> Sign Up</a>
+		<a class="nav" href="Category.html">Category</a> 
+		<a class="nav" href="View Categories.html">View Categories</a>
+		<a class="nav" href="View Products .html">View Products</a>
+	 </div>
+
+	 
+	<p id="wordsignup">Sign up </p>
+	<div id="form">
+	<form method="post" action="process-action.html" onsubmit = "return validateForm();" onsubmit="return validate();">
+		<!--firstName-->
+	<div>
+		<label>First Name :</label>
+		<input  type="text" name="firstName" placeholder="Enter Name" required id="username">&nbsp;  &nbsp;
+
+	<!--LastName-->
+		<label>Last Name:</label>
+		<input type="text" name="firstName" placeholder="Enter Name" required>
+		<input type="submit"> 
+	</div>
+
+	<!--password-->
+	<div>
+		<label >Password:</label>
+		<input  type="Password" name="Password" placeholder="Password" id="password">&nbsp;  &nbsp; 
+		<label>Re-type Password:</label>
+		<input type="Password" name="Password" placeholder="Password">
+		
+	</div><br>
+
+
+		<!--Email-->
+	<div>
+		<label>Email Address:</label>
+		<input type="email" name="email" placeholder="Your email @domin .com">
+
+	</div><br>
+
+	<!--telephone-->
+	<div>
+		<label>Your Telephone</label>
+		<input type="tel" name="Telephone" id="tel">
+		<input type="submit" >
+
+
+
+
+	</div><br>
+	
+	<!--birth day-->
+	<div>
+		<label>Bitrh Date</label>
+		<input type="date" name="BD">
+
+
+	</div><br>
+	<!--Age-->
+	<div>
+		<label>Age:</label>
+		<input type="number" name="Age" min="0">
+	</div><br>
+
+
+
+	<!--Gender-->
+	<div>
+		<label>Gender:</label>
+		<div class="gender" >Male:</div><input type="radio" name="gender" value="male">
+		<div class="gender">Female:</div><input type="radio" name="gender" value="female">
+	</div><br>
+
+	<!--language-->
+	<div>
+		<label>laguage:</label>
+		<div class="gender">Arabic</div> :<input type="checkbox" name="arabic" value="arabic">
+		<div class="gender">English</div> :<input type="checkbox" name="english" value="english">
+		<div class="gender">Frensh</div> :<input type="checkbox" name="Frensh" value="Frensh">
+
+	</div><br>
+
+	<!--Country-->
+	<div>
+		<label>Country:</label>
+		<select name="Country:" class="gender" >
+			<option value="palestine">palestine</option>
+			<option value="Egypt">Egypt</option>
+			<option value="Canada">Canada</option>
+
+		</select>
+	</div><br>
+
+	<!-- interests-->
+	<div>
+		<label> Your interests</label><br>
+		<textarea id="textarea" name="entry" rows="4" cols="80"> enter your interests</textarea>
+
+
+
+	</div><br>
+
+	<!--the conditions-->
+	<div>
+		<input type="checkbox" name="the conditions" value="the conditions"><div id="theprivacy"> creating an account means you’ra oky with our Terms and conditions and our privacy policy.</div>
+	</div><br>
+	 
+
+	 <!--button-->
+
+	 <div>
+	 	<input type="submit" name="Register" value="Register">
+	 </div><br>
+
+
+	</form>
+	</div>
+	<script src="../js/signup.js"></script>
+</body>
+
+
+<footer><p>&copy; 2010 - 2021, Apostrophe Technologies<p></footer>
+</html>

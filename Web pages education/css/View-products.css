@@ -1,0 +1,203 @@
+/*1-style name and logo */
+
+#top{
+	align-items: center;
+	display: flex;
+	width:70%;
+	margin: auto; /*because i want the nav and logo at the center of page*/
+
+}
+
+/*A-style logo for each page*/
+
+#imagelogo{
+	width:40px;
+	height:40px;
+	position: fixed;
+    margin: auto;		
+}
+/*B-style namelogo for each page*/
+#namelogo{
+	display: inline;
+	position: fixed;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 3%;
+
+}
+
+/*2- body for each page*/
+body{
+	 background: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+	 background-attachment:local;
+     font-family: Georgia,sans-serif,monospace;
+     line-height: 1.4;
+  	 font-weight: lighter;
+     font-variant: normal;
+     font-size: 1.2vw;
+     padding: 1% 1.4%;
+}
+
+/*3- nav for each page*/
+
+#navpar{
+	display: inline;
+	position: fixed;
+	width: 70%;
+	margin: auto;
+	padding: 14%;
+	
+}
+
+/*A- nav for each page*/
+.nav{
+	text-decoration:none;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: black;
+	margin:10px ;
+}
+
+/* unvisited link */
+
+.nav:link {
+  color: green;
+}
+
+
+/* visited link */
+.nav:visited {
+  color: purple;
+}
+
+/* mouse over link */
+.nav:hover {
+  color: pink;
+  text-decoration: underline;
+}
+
+
+/* selected link */
+.nav:active {
+  color: blue;
+}
+
+/*footer*/
+footer{
+
+	align-content: center;
+	border-width:2px ;
+	border-style: double;
+	border-color: #73738F;
+	border-radius: 15px;
+}
+
+footer p{
+	color: white;
+	text-align: center;
+}
+
+/*table*/
+table{
+	width: 100%;
+	border: 4px solid;
+	border-color: #49C1A2;
+	margin: 3%;
+	transform: translate(-40px);
+}
+
+table td{
+	padding: 20px;
+	background-color: #EBEBF2;
+	border: 5px solid #DDDED9;
+	
+}
+
+
+table th{
+	background-color: #135762;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: underline;
+	border: 2px solid #DDDED9;
+}
+
+
+/* form sign up element shape */
+ul{
+	list-style: none;
+}
+
+
+/* form sign up element shape */
+li:before{
+	content: "\2665";
+
+}
+
+
+/*last-text*/
+.last-text{
+	display: inline;
+	margin-left: 2%;
+	text-decoration: underline;
+
+}
+
+
+
+/*theOriginalPrice*/
+.theOriginalPrice{
+	display: inline;
+	color: #470F1B;
+	background-color:#918075 ;
+
+}
+/*Responsive*/
+/* for a tablet */
+@media(max-width : 768px){
+	.grid,
+	.showcase .grid,
+	.stats .grid,
+	.cloud .grid{
+		grid-template-columns: 1fr ;
+		grid-template-rows: 1fr ;
+	}
+	.showcase{
+		height: auto;
+	}
+	.showcase-text{
+		text-align: center;
+		margin-top: 40 px;
+	}
+	.showcase-form{
+		justify-self: center;
+		margin: auto;
+	}
+}
+
+
+/* for a mobile */
+@media(max-width : 500px){
+	#navpar{
+		height: 110px;
+	}
+
+	#navpar.flex{
+		flex-direction: column;
+	}
+	#imagelogo{
+		height: 110px;
+	}
+	 #imagelogo.flex{
+	 	flex-direction: column;
+	 }
+	 #namelogo{
+	 	height: 110px;
+	 }
+	 #namelogo.flex{
+	 	flex-direction: column;
+	 }
+
+}

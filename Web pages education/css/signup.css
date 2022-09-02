@@ -1,0 +1,216 @@
+/*footer*/
+footer{
+
+	align-content: center;
+	border-width:2px ;
+	border-style: double;
+	border-color: #73738F;
+	border-radius: 15px;
+}
+
+footer p{
+	color: white;
+	text-align: center;
+}
+
+
+
+/*1-style name and logo */
+
+#top{
+	align-items: center;
+	display: flex;
+	width:70%;
+	margin: auto; /*because i want the nav and logo at the center of page*/
+
+}
+
+/*A-style logo for each page*/
+
+#imagelogo{
+	width:40px;
+	height:40px;
+	position: fixed;
+    margin: auto;		
+}
+/*B-style namelogo for each page*/
+#namelogo{
+	display: inline;
+	position: fixed;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 3%;
+
+}
+
+/*2- body for each page*/
+body{
+	 background: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+	 background-attachment:local;
+     font-family: Georgia,sans-serif,monospace;
+     line-height: 1.4;
+  	 font-weight: lighter;
+     font-variant: normal;
+     font-size: 1.2vw;
+     padding: 1% 1.4%;
+}
+
+/*3- nav for each page*/
+
+#navpar{
+	display: inline;
+	position: fixed;
+	width: 70%;
+	margin-left: auto;
+	padding: 14%;
+	
+}
+
+/*A- nav for each page*/
+.nav{
+	text-decoration:none;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: black;
+	margin:10px ;
+}
+/* unvisited link */
+
+.nav:link {
+  color: green;
+}
+
+
+/* visited link */
+.nav:visited {
+  color: purple;
+}
+
+/* mouse over link */
+.nav:hover {
+  color: pink;
+  text-decoration: underline;
+}
+
+
+/* selected link */
+.nav:active {
+  color: blue;
+}
+
+
+
+/*word sign up*/
+#wordsignup{
+	margin: auto;
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-style: italic;
+	font-size: 40px;
+	font-weight: bold;
+	padding:3%;
+	text-align:center;
+	color: #76548C;
+}
+
+
+
+/* form sign up */
+#form {
+	display: inline-block;
+	transform: translate(300px );
+	border-style: solid;
+	border-color: gray;
+	background-color: rgba(128, 128, 128,30%);
+	border-radius: 3%;
+	border-width:10px;
+	margin: auto;
+	padding: 4%;
+	margin-top: 5%;
+	margin-bottom:15px ;
+}
+
+/* form sign up  name*/
+label{
+	color: #8B63F7;
+	display: inline-block;
+	margin: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* form sign up  input*/
+
+input{
+	border-color: #D6C9F2;
+	border-width: 3px;
+	border-radius: 10px;
+	background-color:#E4E9F2;
+}
+
+/*class="gender"(laguage)(gender)text*/
+.gender{
+	display: inline;
+	color: #76548C;
+	text-decoration: underline;
+}
+/*textarea border*/
+#textarea{
+	border-style: dashed;
+	border-width: 3px;
+	border-color: #382F73;
+	background-color:#E4E9F2;
+
+}
+/*textarea border*/
+#theprivacy{
+	display: inline;
+	color: #382F73;
+}
+/*Responsive*/
+/* for a tablet */
+@media(max-width : 768px){
+	.grid,
+	.showcase .grid,
+	.stats .grid,
+	.cloud .grid{
+		grid-template-columns: 1fr ;
+		grid-template-rows: 1fr ;
+	}
+	.showcase{
+		height: auto;
+	}
+	.showcase-text{
+		text-align: center;
+		margin-top: 40 px;
+	}
+	.showcase-form{
+		justify-self: center;
+		margin: auto;
+	}
+}
+
+
+/* for a mobile */
+@media(max-width : 500px){
+	#navpar{
+		height: 110px;
+	}
+
+	#navpar.flex{
+		flex-direction: column;
+	}
+	#imagelogo{
+		height: 110px;
+	}
+	 #imagelogo.flex{
+	 	flex-direction: column;
+	 }
+	 #namelogo{
+	 	height: 110px;
+	 }
+	 #namelogo.flex{
+	 	flex-direction: column;
+	 }
+
+}
